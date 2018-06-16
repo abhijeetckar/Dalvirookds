@@ -1,0 +1,24 @@
+ <div class="jumbotron text-center" ng-controller="predictController" style="background-image: url(images/order.jpg); color: aliceblue">
+        <h1>Predict</h1>
+
+	<br>	
+  	 <form>
+	
+		<div>
+        		Choose a dish:
+        		<select data-ng-model="selected"
+        	        data-ng-options="product.p_name for product in products" style="color: black">                
+        		</select>
+   		</div>
+	
+	  <div class="col-lg-4 col-md-offset-4">
+	    <div class="input-group">
+	      <input type="number" class="form-control" min="1" ng-model="formData.predict">
+	      <span class="input-group-btn">
+	        <button class="btn btn-danger" ng-click="createPredict()" type="submit">Add!</button>
+	      </span>
+	    </div>
+	  </div>
+	 </form>
+	
+    </div>

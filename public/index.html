@@ -1,0 +1,75 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="starter">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>KDS</title>
+
+	<!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+         
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+	<script src="script.js"></script>
+	<script src="core.js"></script>
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL TODOS WITH INITIALIZE FUNCTION -->
+<body>
+	
+	  <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><i class="fa fa-cog fa-spin fa-3x fa-fw" style="font-size: 20px;"></i>
+                        <span class="sr-only">Loading...</span>Kitchen Display System</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#!"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#!/addproduct"><i class="fa fa-cutlery"></i> Products List</a></li>
+                    <li><a href="#!/addprediction"><i class="fa fa-line-chart"></i> Add Prediction</a></li>
+                    <li><a href="#!/order"><i class="fa fa-shopping-cart"></i> Place Order</a></li>                    
+                    <li><a href="#!/display"><i class="fa fa-television"></i> Kitchen Display</a></li>
+                    <li><a href="#!/report"><i class="fa fa-file-word-o"></i> Report</a></li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+	<div id="main">
+
+        	<!-- angular templating -->
+        	<!-- this is where content will be injected -->
+        	<div ng-view></div>
+
+    	</div>
+
+
+
+
+</body>
+</html>

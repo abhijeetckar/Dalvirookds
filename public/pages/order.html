@@ -1,0 +1,27 @@
+ <div class="jumbotron text-center" ng-controller="orderController" style="background-image: url(images/order.jpg); color: white">
+        <h1>Orders</h1>
+
+	<br>
+	
+  	 <form>
+	
+		<div>
+        		Choose a dish:
+        		<select ng-model="selected"
+        	        data-ng-options="pro.productdetails[0].p_name for pro in products" style="color: black">           
+        		</select>
+   		</div>
+	
+	  <div class="col-lg-4 col-md-offset-4">
+	    <div class="input-group">
+	      <input type="number" class="form-control" min="1" ng-model="formData.order">
+	      <span class="input-group-btn">
+	        <button class="btn btn-success" ng-click="createOrder()" type="submit">Add!</button>
+	      </span>
+			</div>
+			
+	  </div>
+	 </form>
+		</div>
+		
+<h4 class="col-lg-4 col-md-offset-4">Orders can only be placed for predicted products</h4>

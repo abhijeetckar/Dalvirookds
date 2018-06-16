@@ -1,0 +1,26 @@
+ <div class="jumbotron text-center" ng-controller="productController" style="background-image: url(images/chef1.jpg); color: aliceblue">
+        <h1>Add Products</h1>
+
+	<br>
+	
+	
+  	 <form>
+	 
+	  <div class="col-xs-6 col-lg-4 col-lg-offset-4">
+	    <div class="input-group">
+	      <input type="text" class="form-control" ng-model="formData.p_name">
+	      <span class="input-group-btn">
+	        <button class="btn btn-info" ng-click="createProduct()" type="submit">Add!</button>
+	      </span>
+	    </div>
+	  </div>
+	
+	 </form>
+
+	<br>
+        <ul style="list-style-type: none">
+  		<li ng-repeat="item in products track by $index">{{item.p_name}}</li>
+	</ul>
+		</div>
+		
+		

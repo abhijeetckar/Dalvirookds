@@ -1,0 +1,18 @@
+
+<div ng-controller="reportController">
+
+	<div class="jumbotron text-center" style="background-image: url(images/data-analysis.jpg); color: whitesmoke">
+	        <h1>Report</h1>
+		<div id="container"></div>
+		<br>	
+  	
+	</div>
+	Dishname Produced Predicted
+	<div ng-repeat="report in reports">
+		<br>
+		{{report.p_name}} : {{report.createdtillnow}} {{report.predicted}}
+	</div>
+
+	
+
+</div>

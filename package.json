@@ -1,0 +1,22 @@
+{
+  "name": "Dalviroo",
+  "version": "0.0.0",
+  "description": "Kitchen Display System.",
+  "main": "server.js",
+  "author": "Abhijeet Sanjay",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "~4.15.5",
+    "method-override": "~2.1.2",
+    "mongodb": "^2.1.6",
+    "mongoose": "^5.0.7",
+    "morgan": "^1.9.0",
+    "pusher": "^1.5.1",
+    "dotenv": "^5.0.1"
+  }
+}

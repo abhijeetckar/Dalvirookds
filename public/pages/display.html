@@ -1,0 +1,32 @@
+
+<div ng-controller="displayController" ng-init='init()' >
+
+	<div class="jumbotron text-center" style="background-image: url(images/kds.png); color: whitesmoke">
+	        <h1>Kitchen Display</h1>
+
+		<br>	
+  	
+	</div>
+
+
+	<div class="table-responsive">
+		  <table class="table table-hover table-bordered">
+			<thead>    	
+				<tr>
+					<th>Name</th><th>Quantity</th><th>Created-till-now</th><th>Predicted</th><th>Status</th>
+	
+				</tr>
+			<thead>
+			<tbody ng-repeat="dis in displays">
+				<tr>
+			
+					<td>{{dis.productdetails.p_name}}</td><td>{{dis.quantity}}</td><td>{{dis.predictdetails.createdtillnow}}</td><td>{{dis.predictdetails.predicted}}</td><td><button type="button" class="btn btn-primary" ng-click="doneUpdate(dis._id)">Done</button></td>
+
+				</tr>
+	
+			</tbody>
+		  </table>
+	</div>
+
+
+</div>
